@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulaire</title>
+</head>
+<body>
+    
+    <form>
+        <fieldset>
+            <legend>Vos coordonnées</legend>
+            <label for="lePrenom">Prénom</label>
+            <input type="text" name="prenom" id="lePrenom">
+            <label for="leNom">Nom</label>
+            <input type="text" name="nom" id="leNom">
+     
+     <hr>       
+            <h4>Vous êtes ?</h4>
+            
+            <!-- Radio = boutons ronds-->
+            <!-- for et id permet de sélectionner le mot, c'est la liaison entre le label et l'input, le for et l'id doivent être le même, value est la valeur récupérée-->
+            <label for="homme">Homme</label>
+            <input type="radio" value="homme" name="genre" id="homme">
+            <label for="femme">Femme</label>
+            <input type="radio" value="femme" name="genre" id="femme">
+            <label for="autre">Autre</label>
+            <input type="radio" value="autre" name="genre" id="autre">
+            
+            
+            <!--Le name est identique car on veut être exhaustif-->
+            <h4>Quel âge avez-vous ?</h4>
+            <label for="mineur">Moins de 18 ans</label>
+            <input type="radio" value="mineur" name="age" id="mineur">
+            <label for="majeur">Majeur</label>
+            <input type="radio" value="majeur" name="age" id="majeur">
+    </fieldset>
+     
+    <fieldset>
+            <legend>Vos préférences</legend>        
+            <h4>Vous aimez ?</h4>
+            
+            <!-- Checklist= boutons à cocher-->
+            <!--Le name est différent car on peut avoir plusieurs choix possibles-->
+            <label for="frites">Les frites</label>
+            <input type="checkbox" value="frites" name="frites" id="frites">
+            <label for="legumes">Les légumes</label>
+            <input type="checkbox" value="legumes" name="legumes" id="legumes">
+            <label for="tartiflette">La tartiflette</label>
+            <input type="checkbox" value="tartiflette" name="tartiflette" id="tartiflette">
+            
+    </fieldset>
+    </form>
+    
+</body>
+</html>
